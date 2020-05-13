@@ -1,0 +1,26 @@
+// 配置
+@nav: #5b4282;
+
+// 定义宽度并居中
+.wcenter(@w: auto, @mt: 0, @mb: @mt) {
+	width: @w;
+	margin: @mt auto @mb;
+}
+// 文字垂直居中
+.hlh(@h: 20px) {
+	height: @h;
+	line-height: @h;
+}
+// 实现按钮
+.ui-btn(@color: #fff, @bg: @nav) {
+	padding: 15px 40px;
+	font-size: 16px;
+	border: 1px solid @color;
+	border-radius: 8px;
+	color: @color;
+	background: @bg;
+	&:hover {
+		color: @bg;
+		background: @color;
+	}
+}

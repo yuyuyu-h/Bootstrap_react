@@ -1,0 +1,78 @@
+@import url(../../base.less);
+
+.app-home {
+	.banner {
+		background: @nav;
+		color: #fff;
+		padding: 80px 0 120px;
+		text-align: center;
+		.logo {
+			.wcenter(140px);
+			.hlh(140px);
+			font-size: 120px;
+			border-radius: 10px;
+			border: 1px solid #fff;
+		}
+		h1 {
+			.wcenter(800px, 30px);
+			font-size: 30px;
+			line-height: 40px;
+		}
+		.btn {
+			.ui-btn();
+		}
+		p {
+			.wcenter(800px, 20px, 0);
+			color: lighten(@nav, 30%);
+		}
+	}
+	.first-part {
+		padding: 100px 0 80px;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+		h2 {
+			font-size: 40px;
+		}
+		.info {
+			.wcenter(880px);
+			font-size: 20px;
+		}
+		.line {
+			.wcenter(100px, 40px);
+			border-top: 1px solid #ccc;
+		}
+		li {
+			width: 100%/3;
+			float: left;
+			list-style: none;
+			img {
+				width: 90%;
+			}	
+			h3 {
+				font-size: 30px;
+			}	
+			p {
+				padding: 0 10px;
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+		.btn {
+			margin-top: 30px;
+			.ui-btn(@nav, #fff);
+		}
+	}
+	// 复用第一个列表样式
+	.second-part {
+		.first-part;
+		// 重写样式，注意权重
+		li {
+			width: 100%/4;
+			padding: 0 1px;
+			box-sizing: border-box;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

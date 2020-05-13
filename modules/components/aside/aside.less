@@ -1,0 +1,24 @@
+@import url(../../base.less);
+.app-aside {
+	float: right;
+	padding-top: 100px;
+	width: 240px;
+	li {
+		list-style: none;
+		line-height: 30px;
+		padding-left: 30px;
+		border-left: 2px solid transparent;
+		font-size: 16px;
+		a {
+			color: #666;
+			text-decoration: none;
+		}
+		// 鼠标滑动到li上
+		&:hover {
+			border-left-color: @nav;
+			a {
+				color: @nav;
+			}
+		}
+	}
+}
